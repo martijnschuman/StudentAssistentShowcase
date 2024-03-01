@@ -1,14 +1,17 @@
 package stringer
 
 import (
- "fmt"
- "os"
+	"fmt"
+	"os"
 
- "github.com/spf13/cobra"
+	"github.com/spf13/cobra"
 )
+
+var version = "0.0.1"
 
 var rootCmd = &cobra.Command{
     Use:  "stringer",
+    Version: version,
     Short: "stringer - a simple CLI to transform and inspect strings",
     Long: `stringer is a super fancy CLI (kidding)
    
